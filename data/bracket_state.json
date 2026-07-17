@@ -1,0 +1,19 @@
+{
+  "event": "Call of Duty League Championship 2026",
+  "location": "Michelob ULTRA Arena, Las Vegas",
+  "dates": "2026-07-16 to 2026-07-19",
+  "format": "8-team double elimination",
+  "best_of": {
+    "default": 5,
+    "winners_final": 5,
+    "losers_final": 5,
+    "grand_final": 9
+  },
+  "as_of": "2026-07-17 (before OpTic Texas vs Miami Heretics completed)",
+  "winners_r1": [
+    {"high_seed": "OpTic Texas", "low_seed": "Miami Heretics", "winner": null, "score": null},
+    {"high_seed": "Paris Gentle Mates", "low_seed": "Toronto KOI", "winner": "Paris Gentle Mates", "score": "3-0"},
+    {"high_seed": "LA Thieves", "low_seed": "Riyadh Falcons", "winner": "Riyadh Falcons", "score": "3-1"},
+    {"high_seed": "FaZe Vegas", "low_seed": "G2 Minnesota", "winner": "FaZe Vegas", "score": "3-1"}
+  ]
+}
