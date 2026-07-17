@@ -9,9 +9,9 @@
     "losers_final": 5,
     "grand_final": 9
   },
-  "as_of": "2026-07-17 (before OpTic Texas vs Miami Heretics completed)",
+  "as_of": "2026-07-17 (Winners R1 complete)",
   "winners_r1": [
-    {"high_seed": "OpTic Texas", "low_seed": "Miami Heretics", "winner": null, "score": null},
+    {"high_seed": "OpTic Texas", "low_seed": "Miami Heretics", "winner": "OpTic Texas", "score": "3-0"},
     {"high_seed": "Paris Gentle Mates", "low_seed": "Toronto KOI", "winner": "Paris Gentle Mates", "score": "3-0"},
     {"high_seed": "LA Thieves", "low_seed": "Riyadh Falcons", "winner": "Riyadh Falcons", "score": "3-1"},
     {"high_seed": "FaZe Vegas", "low_seed": "G2 Minnesota", "winner": "FaZe Vegas", "score": "3-1"}

@@ -1,32 +1,32 @@
 # CoD Champs 2026 — Model Predictions
 
-Generated 2026-07-17 · 100,000 Monte Carlo simulations · bracket state as of 2026-07-17 (before OpTic Texas vs Miami Heretics completed)
+Generated 2026-07-17 · 100,000 Monte Carlo simulations · bracket state as of 2026-07-17 (Winners R1 complete)
 
 ## Ratings (Elo)
 
 | Team | Rating |
 |---|---|
+| OpTic Texas | 1609 |
 | FaZe Vegas | 1601 |
-| OpTic Texas | 1588 |
 | Paris Gentle Mates | 1577 |
 | LA Thieves | 1552 |
 | Riyadh Falcons | 1470 |
 | Toronto KOI | 1453 |
 | G2 Minnesota | 1445 |
-| Miami Heretics | 1409 |
+| Miami Heretics | 1388 |
 
 ## Tournament outcome probabilities
 
 | Team | Champion | Top 2 | Top 3 | 4th | 5th-6th | 7th-8th | Exp. payout |
 |---|---|---|---|---|---|---|---|
-| FaZe Vegas | 36.8% | 66.8% | 85.6% | 7.9% | 13.0% | 0.0% | $485,389 |
-| OpTic Texas | 26.2% | 48.2% | 65.5% | 9.8% | 40.7% | 8.7% | $387,986 |
-| Paris Gentle Mates | 24.5% | 48.7% | 69.0% | 8.9% | 44.2% | 0.0% | $388,838 |
-| LA Thieves | 6.7% | 14.1% | 25.7% | 12.8% | 69.0% | 54.0% | $194,217 |
-| Riyadh Falcons | 4.0% | 15.0% | 34.4% | 26.5% | 78.2% | 0.0% | $226,350 |
-| Toronto KOI | 0.8% | 3.0% | 8.3% | 17.9% | 60.3% | 87.3% | $123,898 |
-| Miami Heretics | 0.6% | 2.6% | 7.2% | 11.6% | 58.4% | 103.9% | $110,028 |
-| G2 Minnesota | 0.5% | 1.5% | 4.3% | 4.6% | 36.2% | 146.0% | $83,292 |
+| OpTic Texas | 33.8% | 58.6% | 76.0% | 7.0% | 33.9% | 0.0% | $448,586 |
+| FaZe Vegas | 33.8% | 65.3% | 85.7% | 8.7% | 11.3% | 0.0% | $471,793 |
+| Paris Gentle Mates | 21.7% | 43.8% | 64.2% | 10.0% | 51.7% | 0.0% | $365,180 |
+| LA Thieves | 5.8% | 12.9% | 24.3% | 10.8% | 75.7% | 54.2% | $185,850 |
+| Riyadh Falcons | 3.6% | 14.3% | 34.5% | 29.2% | 72.6% | 0.0% | $225,782 |
+| Toronto KOI | 0.8% | 3.0% | 8.9% | 20.8% | 69.9% | 70.7% | $132,839 |
+| G2 Minnesota | 0.4% | 1.4% | 4.0% | 3.7% | 38.8% | 145.8% | $81,712 |
+| Miami Heretics | 0.1% | 0.6% | 2.5% | 9.7% | 46.2% | 129.3% | $88,259 |
 
 Placement columns are per-slot probabilities (5th-6th and 7th-8th shown as the combined chance of landing in that tier). Expected payout uses the ESTIMATED prize split in data/payouts.csv.
 
