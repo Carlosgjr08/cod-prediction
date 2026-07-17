@@ -18,6 +18,12 @@ No dependencies beyond the Python 3 standard library.
 3. **Simulation** (`codpred/simulate.py`) — 100k Monte Carlo runs of the remaining bracket. Completed matches in `data/bracket_state.json` are locked in; Gaussian noise is added to ratings each run to reflect how thin the input data is. Outputs champion %, full placement distributions, and expected prize money.
 4. **Betting** (`codpred/betting.py`) — put live decimal odds in `data/odds.csv` and the report adds vig-adjusted market probability, model edge, EV per $1, and quarter-Kelly stake suggestions. Bets are only flagged when the edge clears 5%.
 
+## Season context (2026, Black Ops 7)
+
+- Modes this season: Hardpoint / SnD / **Overload** (new mode replacing Control). Majors: Bo5 bracket, Bo7 grand final.
+- Major winners: M1 Dallas — Gentle Mates (4–3 over OpTic) · M2 Birmingham — FaZe Vegas (4–1 over OpTic) · M3 Atlanta — LA Thieves (4–3 over OpTic) · M4 Paris — OpTic (4–3 over LA Thieves).
+- Rosters and coaches are in `data/players.csv` / `data/coaches.csv` (context only — the model rates teams, not players; no per-player K/D data was retrievable).
+
 ## Updating the data (do this before trusting any number)
 
 - **`data/matches.csv`** — currently holds only headline results (four Major grand finals + Champs day 1). The model works but leans on seeding priors. Copy the full 2026 season match log from breakingpoint.gg or Liquipedia into this CSV and ratings get much sharper.
