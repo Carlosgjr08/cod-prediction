@@ -1,32 +1,32 @@
 # CoD Champs 2026 — Model Predictions
 
-Generated 2026-07-17 · 500,000 Monte Carlo simulations · bracket state as of 2026-07-17 (Winners R1 complete)
+Generated 2026-07-18 · 500,000 Monte Carlo simulations · bracket state as of 2026-07-18 (Winners SF and Losers R1 complete; LA Thieves eliminated 7th-8th)
 
 ## Ratings (Elo)
 
 | Team | Rating |
 |---|---|
-| OpTic Texas | 1609 |
-| FaZe Vegas | 1601 |
-| Paris Gentle Mates | 1577 |
-| LA Thieves | 1552 |
-| Riyadh Falcons | 1470 |
-| Toronto KOI | 1453 |
-| G2 Minnesota | 1445 |
-| Miami Heretics | 1388 |
+| OpTic Texas | 1632 |
+| FaZe Vegas | 1627 |
+| Paris Gentle Mates | 1555 |
+| LA Thieves | 1532 |
+| G2 Minnesota | 1465 |
+| Riyadh Falcons | 1445 |
+| Toronto KOI | 1435 |
+| Miami Heretics | 1407 |
 
 ## Tournament outcome probabilities
 
 | Team | Champion | Top 2 | Top 3 | 4th | 5th-6th | 7th-8th | Exp. payout |
 |---|---|---|---|---|---|---|---|
-| FaZe Vegas | 33.9% | 65.4% | 85.7% | 8.7% | 11.2% | 0.0% | $472,417 |
-| OpTic Texas | 33.9% | 58.6% | 76.0% | 7.0% | 33.8% | 0.0% | $448,868 |
-| Paris Gentle Mates | 21.6% | 43.8% | 64.2% | 10.0% | 51.7% | 0.0% | $364,792 |
-| LA Thieves | 5.8% | 12.9% | 24.3% | 10.7% | 76.0% | 54.1% | $185,737 |
-| Riyadh Falcons | 3.6% | 14.2% | 34.4% | 29.3% | 72.6% | 0.0% | $225,483 |
-| Toronto KOI | 0.8% | 3.0% | 8.8% | 20.9% | 69.9% | 70.7% | $132,740 |
-| G2 Minnesota | 0.4% | 1.4% | 4.0% | 3.8% | 38.6% | 145.9% | $81,674 |
-| Miami Heretics | 0.1% | 0.6% | 2.5% | 9.7% | 46.3% | 129.3% | $88,290 |
+| OpTic Texas | 46.4% | 83.8% | 100.0% | 0.0% | 0.0% | 0.0% | $561,352 |
+| FaZe Vegas | 43.5% | 82.6% | 100.0% | 0.0% | 0.0% | 0.0% | $548,041 |
+| Paris Gentle Mates | 8.0% | 22.1% | 52.2% | 17.2% | 61.1% | 0.0% | $268,250 |
+| G2 Minnesota | 1.1% | 5.0% | 18.4% | 12.2% | 138.9% | 0.0% | $168,914 |
+| Riyadh Falcons | 0.7% | 4.4% | 18.6% | 39.8% | 83.1% | 0.0% | $187,769 |
+| Miami Heretics | 0.3% | 2.0% | 10.8% | 30.8% | 116.9% | 0.0% | $165,674 |
+| LA Thieves | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 200.0% | $50,000 |
+| Toronto KOI | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 200.0% | $50,000 |
 
 Placement columns are per-slot probabilities (5th-6th and 7th-8th shown as the combined chance of landing in that tier). Expected payout uses the ESTIMATED prize split in data/payouts.csv.
 

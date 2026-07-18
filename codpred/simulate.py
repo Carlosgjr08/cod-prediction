@@ -31,7 +31,10 @@ def load_bracket(path: str) -> dict:
         return json.load(f)
 
 
-def _play(ratings, a, b, best_of, rng):
+def _play(ratings, a, b, best_of, rng, fixed_winner=None):
+    """Sample a series; if fixed_winner is set (completed match), lock it in."""
+    if fixed_winner is not None:
+        return (a, b) if fixed_winner == a else (b, a)
     p_map = expected(ratings[a], ratings[b])
     p_series = series_win_prob(round(p_map, 4), best_of)
     return (a, b) if rng.random() < p_series else (b, a)
@@ -46,6 +49,7 @@ def simulate(model, bracket: dict, n_sims: int = 100_000, seed: int = 7):
     placements = defaultdict(lambda: defaultdict(int))
 
     r1 = bracket["winners_r1"]
+    done = bracket.get("completed", {})
 
     for _ in range(n_sims):
         ratings = {
@@ -63,20 +67,20 @@ def simulate(model, bracket: dict, n_sims: int = 100_000, seed: int = 7):
             wb_w.append(w)
             wb_l.append(l)
 
-        sf1_w, sf1_l = _play(ratings, wb_w[0], wb_w[1], bo_def, rng)
-        sf2_w, sf2_l = _play(ratings, wb_w[2], wb_w[3], bo_def, rng)
+        sf1_w, sf1_l = _play(ratings, wb_w[0], wb_w[1], bo_def, rng, done.get("wb_sf1"))
+        sf2_w, sf2_l = _play(ratings, wb_w[2], wb_w[3], bo_def, rng, done.get("wb_sf2"))
 
-        wbf_w, wbf_l = _play(ratings, sf1_w, sf2_w, bo["winners_final"], rng)
+        wbf_w, wbf_l = _play(ratings, sf1_w, sf2_w, bo["winners_final"], rng, done.get("wb_final"))
 
-        lb1a_w, lb1a_l = _play(ratings, wb_l[0], wb_l[1], bo_def, rng)
-        lb1b_w, lb1b_l = _play(ratings, wb_l[2], wb_l[3], bo_def, rng)
+        lb1a_w, lb1a_l = _play(ratings, wb_l[0], wb_l[1], bo_def, rng, done.get("lb_r1a"))
+        lb1b_w, lb1b_l = _play(ratings, wb_l[2], wb_l[3], bo_def, rng, done.get("lb_r1b"))
 
-        lb2a_w, lb2a_l = _play(ratings, lb1a_w, sf2_l, bo_def, rng)
-        lb2b_w, lb2b_l = _play(ratings, lb1b_w, sf1_l, bo_def, rng)
+        lb2a_w, lb2a_l = _play(ratings, lb1a_w, sf2_l, bo_def, rng, done.get("lb_r2a"))
+        lb2b_w, lb2b_l = _play(ratings, lb1b_w, sf1_l, bo_def, rng, done.get("lb_r2b"))
 
-        lbsf_w, lbsf_l = _play(ratings, lb2a_w, lb2b_w, bo_def, rng)
-        lbf_w, lbf_l = _play(ratings, lbsf_w, wbf_l, bo["losers_final"], rng)
-        gf_w, gf_l = _play(ratings, wbf_w, lbf_w, bo_gf, rng)
+        lbsf_w, lbsf_l = _play(ratings, lb2a_w, lb2b_w, bo_def, rng, done.get("lb_sf"))
+        lbf_w, lbf_l = _play(ratings, lbsf_w, wbf_l, bo["losers_final"], rng, done.get("lb_final"))
+        gf_w, gf_l = _play(ratings, wbf_w, lbf_w, bo_gf, rng, done.get("grand_final"))
 
         champion[gf_w] += 1
         placements[gf_w][1] += 1
