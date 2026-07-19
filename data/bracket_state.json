@@ -9,17 +9,17 @@
     "losers_final": 5,
     "grand_final": 9
   },
-  "as_of": "2026-07-18 (Winners SF and Losers R1 complete; LA Thieves eliminated 7th-8th)",
+  "as_of": "2026-07-19 (only Grand Final remains: FaZe Vegas vs OpTic Texas)",
   "completed": {
     "wb_sf1": "OpTic Texas",
     "wb_sf2": "FaZe Vegas",
     "lb_r1a": "Miami Heretics",
     "lb_r1b": "G2 Minnesota",
-    "wb_final": null,
-    "lb_r2a": null,
-    "lb_r2b": null,
-    "lb_sf": null,
-    "lb_final": null,
+    "wb_final": "FaZe Vegas",
+    "lb_r2a": "Riyadh Falcons",
+    "lb_r2b": "Paris Gentle Mates",
+    "lb_sf": "Riyadh Falcons",
+    "lb_final": "OpTic Texas",
     "grand_final": null
   },
   "winners_r1": [
